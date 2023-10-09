@@ -1,0 +1,97 @@
+<html>
+    <head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+        <h1>positioning types example</h1>
+        </center>
+        <div class="container">
+            <div class="static-element">Static</div>
+            <p>Static is the default position for HTML elements. Elements with position: static are positioned based on the normal flow of the page, as you would expect them to be without any CSS styling.They are not affected by the top, right, bottom, or left properties. Z-index also does not apply to static elements.</p>
+        </div>
+         <div class="container">
+            <div class="relative-element">
+           <img  style=" width: 300px; height: 300px;"src="istockphoto-1146517111-612x612.jpg">
+             </div>
+        </div>
+         <div class="container">
+            <div class="absolute-element">
+                <img  style=" width: 300px; height: 300px;" src="OIG.CO2sHWK_IEYIwzXsC2hX">
+             </div>
+        </div>
+    
+        <div class="container">
+            <div class="main">
+                <img src="avenue-815297_640.jpg">
+                <img src="download%20(1).jpeg">
+                <img src="download.jpeg">
+            </div>
+        </div>
+        
+    </body>
+            <style>
+            .main{
+            display:flex;
+            flex-direction:row;
+              flex-wrap: nowrap;                  
+            align-items:center;
+            justify-content: space-around;
+            
+            
+        }
+                }
+                h1{
+                    font-family: 'Rubik Moonrocks', cursive;
+                
+                }
+                img{
+                    width: 100px;
+                    height: 300px;
+                }
+                body{
+                    background-image: url(background-3104413_1280.jpg);
+                     background-size:cover;
+                       background-repeat: no-repeat;
+                }
+            .container{
+                position: relative;
+                width:300px;
+                height: 300px;
+                border:3px solid #ccc;
+                margin:20px;
+                
+            }
+            .static-element{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+        
+            }
+            .relative-element{
+                position: relative;
+         
+                 width: 70px;
+                height: 50px;
+                background-color: blue;
+                
+            }
+            .absolute-element{
+                position: absolute;
+             
+                 width: 70px;
+                height: 50px;
+                background-color: green;
+            }
+            .fixed-element{
+                position: relative;
+                top: 20px;
+                left: 30px;
+                 width: 70px;
+                height: 50px;
+                background-color:orange;
+            }
+                
+            
+        </style>
+</html>
